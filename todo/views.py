@@ -16,10 +16,8 @@ def todo_list(request):
         form = TodoForms(request.POST)
         if form.is_valid():
             form.save()
-    else:
-        form = TodoForms()
+            return redirect('/')
     form = TodoForms()
-
     return render(request, 'todo/todo_list.html', {'object_list': todos, 'form': form})
 
 
