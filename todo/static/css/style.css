@@ -1,7 +1,16 @@
 body {
-  background-color: rgb(93, 30, 151);
+  background-color: rgb(93, 102, 234);
 }
 
-h1 {
-  color: blue;
+.container {
+  background-color: whitesmoke;
+  margin-top: 100px;
+  padding: 50px;
+  box-shadow: 6px 6px 30px -10px rgba(0, 0, 0, 0.72);
+  border-radius: 15px;
+}
+
+.btn {
+  height: 35px;
+  text-align: center;
 }
