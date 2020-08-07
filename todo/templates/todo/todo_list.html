@@ -12,7 +12,7 @@
     {% for todo in object_list %}
     <p>
         {{ todo.title }}
-        
+        <a href="/delete/{{todo.id}}/">delete</a>
     </p>
     {% endfor %}
 </body>
