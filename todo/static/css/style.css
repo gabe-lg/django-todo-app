@@ -11,6 +11,23 @@ body {
 }
 
 .btn {
-  height: 35px;
-  text-align: center;
+  height: 30.5px;
+  line-height: 1px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#delete-icon:hover {
+  transform: scale(1.2);
+}
+
+#title:hover {
+  text-decoration: none;
+}
+
+#title-cross {
+  text-decoration: line-through;
 }

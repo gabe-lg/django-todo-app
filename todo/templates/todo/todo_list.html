@@ -27,18 +27,23 @@
             {{ field.errors }} {{ field }}
           </div>
           {% endfor %}
-          <button class="btn btn-primary mx-5">Save</button>
+          <button class="btn btn-primary mx-4">Save</button>
         </form>
       </div>
 
       <div class="col-12 mt-4">
         {% for todo in object_list %}
         <p>
-          {{ todo.title }}
-          <a href="/delete/{{todo.id}}/" class="float-right">
+          {% if todo.completed %}
+          <a href="{{todo.id}}" id="title-cross">{{ todo.title }}</a>
+          {% else %}
+          <a href="{{todo.id}}" id="title">{{ todo.title }}</a>
+          {% endif %}
+          <a href="/delete/{{todo.id}}/" id="delete-icon" class="float-right">
             <i class="fas fa-trash-alt"></i>
           </a>
         </p>
+
         <hr />
         {% endfor %}
       </div>

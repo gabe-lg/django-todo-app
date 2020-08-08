@@ -25,3 +25,11 @@ def delete_todo(request, id):
     task = Todo.objects.get(id=id)
     task.delete()
     return redirect('/')
+
+
+def active_cross(request, id):
+    print('working')
+    task = Todo.objects.get(id=id)
+    task.completed = not task.completed
+    task.save()
+    return redirect('/')
