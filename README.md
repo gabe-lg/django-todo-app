@@ -6,4 +6,4 @@ todo - app name
 
 todo_app - django project name
 
-![screenshot](https://i.ibb.co/QHHhSnW/Screenshot-21.png)
+![screenshot](https://i.ibb.co/sgF0QTM/Screenshot-25.png)
